@@ -1,0 +1,30 @@
+(executable
+ (public_name day1p1)
+ (name day1p1)
+ (libraries ocaml_aoc)
+ (modules day1p1))
+
+(executable
+ (public_name day1p2)
+ (name day1p2)
+ (libraries ocaml_aoc)
+ (modules day1p2))
+
+(executable
+ (public_name day2p21)
+ (name day2p1)
+ (libraries ocaml_aoc)
+ (modules day2p1))
+
+(executable
+ (public_name day2p2)
+ (name day2p2)
+ (libraries ocaml_aoc)
+ (modules day2p2))
+
+(executable
+ (public_name day3p1)
+ (name day3p1)
+ (libraries ocaml_aoc)
+ (modules day3p1))
+
