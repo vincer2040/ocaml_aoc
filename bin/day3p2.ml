@@ -11,18 +11,15 @@ let rec get_three list =
 ;;
 
 let get_common list =
-  let map_first = MyMap.empty in
-  let map_second = MyMap.empty in
   let map_first_c =
     List.nth list 0
-    |> String.fold_left (fun acc char -> MyMap.add char 0 acc) map_first
+    |> String.fold_left (fun acc char -> MyMap.add char 0 acc) @@ MyMap.empty
   in
   let map_second_c =
     List.nth list 1
-    |> String.fold_left
-         (fun acc char ->
-           if MyMap.mem char map_first_c then MyMap.add char 0 acc else acc)
-         map_second
+    |> String.fold_left (fun acc char ->
+         if MyMap.mem char map_first_c then MyMap.add char 0 acc else acc)
+       @@ MyMap.empty
   in
   let result = ref None in
   List.nth list 2
