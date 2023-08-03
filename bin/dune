@@ -28,3 +28,10 @@
  (libraries ocaml_aoc)
  (modules day3p1))
 
+(executable
+ (public_name day3p2)
+ (name day3p2)
+ (libraries ocaml_aoc)
+ (modules day3p2))
+
+
